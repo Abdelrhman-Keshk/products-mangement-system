@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #232123;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.head {
+  margin: 20px;
+  text-align: center;
+}
+
+.head h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.head h4 {
+  font-size: 14px;
+  color: rgb(219, 219, 219);
+}
+
+input,
+button {
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  background-color: #121113;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+}
+
+input:focus{
+  /* transform: scale(1.1); */
+  background-color: #111111;
+}
+
+.inputs button {
+  width: 100%;
+  background-color: #400b9b;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.inputs button:hover {
+  background-color: #4d0ac0;
+  letter-spacing: 1px;
+}
+
+.cost input {
+  width: 20%;
+}
+
+#total {
+  background-color: #4e4cec;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#total::before {
+  content: "Total:";
+}
+
+.search-btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  /* border-spacing: 10px; */
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  background-color: #404041;
+  padding: 10px;
+  flex-basis: 150px;
+  flex-grow: 1;
+  border-radius: 20px;
+  height: 38px;
+}
+
+td {
+  background-color: #4d4c4c;
+  text-transform: capitalize;
+}
+
+.tbtn {
+  padding: 0;
+  background-color: #400b9b;
+}
+
+.tbtn button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tbtn button:hover {
+  background-color: #4d0ac0;
+}

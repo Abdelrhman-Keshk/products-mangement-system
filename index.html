@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h2>CRUDS</h2>
+        <h4>CREATE READ UPDATE DELETE SEARCH</h4>
+      </div>
+      <div class="inputs">
+        <input id="title" type="text" placeholder="Title" />
+        <div class="cost">
+          <input id="price" type="number" placeholder="Price" />
+          <input id="taxes" type="number" placeholder="Taxes" />
+          <input id="ads" type="number" placeholder="Ads" />
+          <input id="discount" type="number" placeholder="Discount" />
+          <span id="total"></span>
+        </div>
+        <input id="count" type="text" placeholder="Count" />
+        <input id="category" type="text" placeholder="Category" />
+        <button id="createBtn">Create</button>
+        <div class="search">
+          <input onkeyup="searchData(this.value)" id="searchInput" type="search" placeholder="Search By Title" />
+          <div class="search-btns">
+            <button onclick="getSearchMode(this.id)" id="searchTitle">Search By Title</button>
+            <button onclick="getSearchMode(this.id)" id="searcCategory">Search By Category</button>
+          </div>
+        </div>
+        <button id="delAllBtn" style="margin: 20px 0;display: none" onclick="deleteAllData()">Delete All <span id="productsCount"></span></button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Taxes</th>
+            <th>Ads</th>
+            <th>Discount</th>
+            <th>Total</th>
+            <th>Category</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
